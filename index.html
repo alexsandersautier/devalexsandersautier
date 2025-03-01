@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Alexsander Sautier -  desenvolvimento web</title>
+    <link rel="icon" href="assets/icons/logo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/icons/logo.png" alt="logo">
+        </div>
+        <i id="burguer" class="material-icons">menu</i>
+        <nav id="links">
+            <ul>
+                <li><a href="#order">Orçamento</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="business">
+            <div class="content">
+                <h1>Desenvolvimento web</h1>
+                <p>páginas, landingpages e sistemas totalmente customizados para o seu negócio com a sua cara.</p>
+                <div class="call">
+                    <button id="order">Fazer um orçamento</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="assets/images/banner.png" alt="banner">
+            </div>
+        </section>
+        <section class="order" id="order">
+            <form action="https://formsubmit.co/alexsanderesramos@gmail.com" method="post">
+                <h2>Orçamento</h2>
+                <div class="form-control">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-control">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-control">
+                    <label for="whatsapp">Whatsapp</label>
+                    <input type="tel" name="whatsapp" id="whatsapp" required>
+                </div>
+                <div class="form-control">
+                    <label for="order">Solicitação</label>
+                    <textarea name="order" id="order" required></textarea>
+                </div>
+                <div class="form-control">
+                    <input type="submit" value="Enviar">
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="/thanks.html">
+
+            </form>
+        </section>
+        <section class="services" id="services">
+            <div class="card-services">
+                <h3>Landing page</h3>
+                <img src="assets/images/landingpage.png" alt="landingpage">
+                <p>Uma <strong>landing page</strong> é uma página web focada em converter visitantes em clientes ou leads, usando um design atrativo e um botão de ação direto.</p>
+            </div>
+            <div class="card-services">
+                <h3>Sites</h3>
+                <img src="assets/images/sites.png" alt="sites">
+                <p>Um <strong>site</strong> é um conjunto de páginas web conectadas, usadas para informar, vender, entreter ou oferecer serviços online.</p>
+            </div>
+            <div class="card-services">
+                <h3>Sistema para gestão de serviços</h3>
+                <img src="assets/images/sistemas.png" alt="landingpage">
+                <p>Um <strong>sistema de gestão</strong> é um software que automatiza e organiza processos empresariais, melhorando controle, eficiência e tomada de decisões.</p>
+            </div>
+        </section>
+        <section class="portifolio" id="portifolio">
+            <h3>Portifólio</h3>
+            <div class="card-portifolio">
+                <div class="arrow-left">
+                    <button id="previous"><img src="assets/icons/arrowleft.png" alt="arrowleft"></button>
+                </div>
+                <div class="content">
+                    <h4 id="site-name">SautierCar</h4>
+                    <img id="site-image" src="assets/images/sautiercar.png" alt="SautierCar" width="600px" height="600">
+                    <p><a href="https://sautiercar.vercel.app/" id="site-link" target="_blank">Ver</a></p>
+                </div>
+                <div class="arrow-right">
+                    <button id="next"><img src="assets/icons/arrowright.png" alt="arrowright"></button>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h3>Sobre</h3>
+            <div class="about-content">
+                <p>Me chamo Alexsander, sou desenvolvedor de software a mais de 2 anos mas sempre fui entusiasta do mundo da programação, desde 2014,
+                   no programa de jovem aprendiz aonde fiz o curso de aprendizagem industrial em informatica e tive duas máterias de programação, aprendi
+                   Portugol e C++, com 14 anos de idade. Aos 17 entrei na UFFS para o curso de Ciências da computação mas não finalizei, acabei me aventurando
+                   em outros assuntos e só em 2020 retomei a programação aonde fui atrás de me formar e assim concluí ADS.
+                   Desde então nunca parei de aprender mais sobre desenvolvimento e resolução de problemas com software focado na experiência do usuário.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="assets/images/eu.jpg" alt="foto de alexsander">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Todos os direitos reservado a <strong>Alexsander Sautier</strong>.</p>
+    </footer>
+    <!-- <div class="whats">
+        <a href="https://wa.me/5549988139463" target="_blank"><img src="assets/icons/whatsapp.png" alt="whatsapp"></a>
+    </div> -->
+    <script src="assets/js/script.js" type="module"></script>
+</body>
+</html>
