@@ -257,9 +257,10 @@ main{
 .about > h3{
     width: 100%;
     text-align: center;
+    flex: 1;
 }
 .about .about-content {
-    width: 100%;
+    flex: 1;
     padding: 5px 10px;
     display: flex;
     flex-direction: column;
@@ -273,7 +274,7 @@ main{
 }
 
 .about > .about-img {
-    width: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,7 +282,49 @@ main{
 }
 
 .about .about-img > img {
-    max-width: 500px;
+    max-width: 50vw;
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 500px;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.contact > .links{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    margin: 0 auto;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info > p, iframe{
+    display: flex;
+    align-items: center;
+}
+
+.info p > a {
+    color: #000;
+
+}
+
+.links > iframe {
+    flex: 1;
+    height: 400px;
 }
 
 /* FOOTER */
@@ -371,4 +414,7 @@ footer > p {
 
     }
     
+    .info > iframe{
+        
+    }
 }
