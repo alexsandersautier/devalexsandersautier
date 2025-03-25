@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devalexsandersautier.vercel.app/sitemap.xml
